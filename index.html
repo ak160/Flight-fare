@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight</title>
+    <link rel="icon" type="image/x-icon" href="assest/plane.ico" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-left">
+        <i class="fa-solid fa-plane"></i>
+        <a href="#">Explore</a>
+        <a href="#">Flight</a>
+        <a href="#">Cab Hire</a>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="desktop-only">Reminder</a>
+        <a href="#" class="desktop-only"><i class="fa-solid fa-user"></i> Sign in</a>
+        <i class="fa-solid fa-bars menu-icon"></i>
+        <div class="dropdown-menu">
+          <a href="#" class="mobile-only">Reminder</a>
+          <a href="#" class="mobile-only"><i class="fa-solid fa-user"></i> Sign in</a>
+          <a href="#">Register</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+    <section id="search-flight">
+      <header>
+        Discover Optimal Flight Deals: Save Big and Travel Smart with Accurate Fare Predictions!
+      </header>
+      <form id="myform" action="" method="post">
+        <div class="form-container">
+          <div class="input-wrapper">
+            <input type="text" name="departure" id="departure" required autocomplete="off" list="departure-options"/>
+            <label>From</label>
+            <datalist id="departure-options">
+              <option value="Mumbai">Chhatrapati Shivaji Maharaj International Airport, Mumbai (BOM)</option>
+              <option value="Lucknow">Chaudhary Charan Singh International Airport, Lucknow (LKO)</option>
+              <option value="Amritsar">Amritsar Sri Guru Ram Dass Jee International Airport, Amritsar (ATQ)</option>
+              <option value="Delhi">Indira Gandhi International Airport, Delhi </option>
+              <option value="Jaipur">Jaipur International Airport, Jaipur (JAI)</option>
+              <option value="Bengaluru">Kempegowda International Airport, Bengaluru (BLR)</option>
+              <option value="Hyderabad">Rajiv Gandhi International Airport, Hyderabad (HYD)</option>
+              <option value="Chennai">Chennai International Airport, Chennai (MAA)</option>
+              <option value="Ahmedabad">Sardar Vallabhbhai Patel International Airport, Ahmedabad (AMD)</option>
+              <option value="Goa">Goa International Airport, Goa (GOI)</option>
+              <option value="Kolkata">Netaji Subhas Chandra Bose International Airport, Kolkata (CCU)</option>
+              <option value="patna">Gaya Airport, Gaya (GAY)</option>
+              <option value="Nagpur">Dr. Babasaheb Ambedkar International Airport, Nagpur (NAG)</option>
+            </datalist>
+          </div>
+          <div class="input-wrapper">
+            <input type="text" name="arrival" id="arrival" required list="arrival-options" autocomplete="off"/>
+            <label>To</label>
+            <datalist id="arrival-options">
+              <option value="Mumbai">Chhatrapati Shivaji Maharaj International Airport, Mumbai (BOM)</option>
+              <option value="Lucknow">Chaudhary Charan Singh International Airport, Lucknow (LKO)</option>
+              <option value="Amritsar">Amritsar Sri Guru Ram Dass Jee International Airport, Amritsar (ATQ)</option>
+              <option value="Delhi">Indira Gandhi International Airport, Delhi </option>
+              <option value="Jaipur">Jaipur International Airport, Jaipur (JAI)</option>
+              <option value="Bengaluru">Kempegowda International Airport, Bengaluru (BLR)</option>
+              <option value="Hyderabad">Rajiv Gandhi International Airport, Hyderabad (HYD)</option>
+              <option value="Chennai">Chennai International Airport, Chennai (MAA)</option>
+              <option value="Ahmedabad">Sardar Vallabhbhai Patel International Airport, Ahmedabad (AMD)</option>
+              <option value="Goa">Goa International Airport, Goa (GOI)</option>
+              <option value="Kolkata">Netaji Subhas Chandra Bose International Airport, Kolkata (CCU)</option>
+              <option value="patna">Gaya Airport, Gaya (GAY)</option>
+              <option value="Nagpur">Dr. Babasaheb Ambedkar International Airport, Nagpur (NAG)</option>
+            </datalist>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="datetime-local"
+              name="depart-date"
+              id="depart-date"
+              required
+              autocomplete="off"
+            />
+            <label>Departure date</label>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="datetime-local"
+              name="arrival-date"
+              id="arrival-date"
+              required
+              autocomplete="off"
+            />
+            <label>Arrival date</label>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="stops"
+              id="stop-count"
+              placeholder=""
+              required
+              autocomplete="off"
+            />
+            <label>Stops</label>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="airline"
+              id="airline"
+              placeholder=""
+              required
+              list="airline-option"
+              autocomplete="off"
+            />
+            <label>Airline</label>
+            <datalist id="airline-option">
+              <option value="AI">Air India (AI)</option>
+              <option value="6E">IndiGo (6E)</option>
+              <option value="SG">SpiceJet (SG)</option>
+              <option value="UK">Vistara (UK)</option>
+              <option value="I5">AirAsia India (I5)</option>
+              <option value="9I">Alliance Air (9I)</option>
+
+            </datalist>
+          </div>
+        </div>
+      </form>
+      <search-flight-footer>
+        <button type="submit" form="myform" id="form-submit">
+          <span class="material-symbols-outlined">search</span>Search
+        </button>
+      </search-flight-footer>
+    </section>
+    <section id="expected-fare" style="text-align: center;">expected flight fare will shown here</section>
+    <section id="fare-percent-change">
+      <p style="text-align: center;">percentage of change of flight fare will shown here </p>
+    </section>
+    <section id="range-fare-percentage-change"style="text-align: center;">percentage change of fare for that specific range will shown here</section>
+    <section id="date-prediction" style="text-align: center;"><p>best date to book flight</p></section>
+    <section id="flight-book" style="text-align: center;"> <p>best flight to book</p></section>
+    <section id="flight-list" style="text-align: center;">fligh list will shown here with recommendation</section>
+    <footer>
+      <div class="footer-item">
+        <div class="social-box">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="support-box">
+          <a href="#">Register</a>
+          <a href="#">Support</a>
+          <a href="#">Reminder</a>
+        </div>
+        <div class="terms-box">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Bug Report</a>
+        </div>
+      </div>
+      <p>&copy; 2024 Flight. All Rights Reserved.</p>
+
+    </footer>
+   <script src="index.js"></script>
+  </body>
+</html>

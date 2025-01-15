@@ -1,0 +1,11 @@
+{
+  "name": "flight-fare",
+  "version": "1.0.0",
+  "description": "its an flight fare optimizing amazing web application .",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aditya",
+  "license": "ISC"
+}
