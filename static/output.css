@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.output {
+    width: calc(100% - 40px);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    height: fit-content;
+    background-color: #eaf2f8;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px 20px;
+    padding-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.flight-output {
+    background-color: #eaf2f8;
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 0 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: all 0.3s ease;
+}
+
+.flight-output .inner-box {
+    font-size: 1rem;
+}
+
+@media (max-width: 1150px) {
+    .flight-output {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-evenly;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
