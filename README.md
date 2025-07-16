@@ -9,4 +9,10 @@
 | Lasso Regression       | 3560.85  | 32       | 0.41          | 3459.38  | 32       | 0.42          |
 | Decision Tree Regressor|  853.54  | 06       | 0.97          | 1857.68  | 10       | 0.83          |
 
-- Credit to `` Aman Preet Singh Gulati ``
+# Use this commands to see the website locally
+```bash
+git clone https://github.com/ak160/Flight-fare.git
+cd Flight-fare
+python app.py
+```
+
